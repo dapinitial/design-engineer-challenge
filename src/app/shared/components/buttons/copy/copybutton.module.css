@@ -10,7 +10,6 @@
     cursor: pointer;
 }
 
-
 .copyButton:hover {
     background-color: var(--color-smokey);
 }
@@ -26,4 +25,10 @@
 
 .copyIcon {
     fill: var(--color-white);
+}
+
+@media (max-width: 32rem) {
+    .copyButton {
+        display: none;
+    }
 }

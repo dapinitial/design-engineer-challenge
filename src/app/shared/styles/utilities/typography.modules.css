@@ -1,0 +1,55 @@
+.body-large {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-body-large);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body-large);
+    color: var(--color-smokey);
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.body-medium {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-body-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body-medium);
+    text-align: left;
+    color: var(--color-white);
+}
+
+.caption-large {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-caption-large);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-caption-large);
+    text-align: left;
+    color: var(--color-lavender);
+}
+
+.caption-medium {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-caption-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-caption-medium);
+    text-align: left;
+    color: var(--color-lavender);
+}
+
+.page-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-bold);
+    font-size: clamp(2rem, 4vw + 1rem, 4rem);
+    line-height: clamp(2.5rem, 4.5vw + 1rem, 4.5rem);
+    color: var(--color-white);
+    text-align: left;
+    word-break: break-word;
+    margin: 0;
+}
+
+.banner-type {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-body-small);
+    line-height: var(--line-height-body-small);
+    color: var(--color-white);
+}

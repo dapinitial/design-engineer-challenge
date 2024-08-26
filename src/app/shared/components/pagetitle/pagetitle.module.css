@@ -1,10 +1,3 @@
 .title {
-    font-family: 'Inter', sans-serif;
-    font-weight: var(--font-weight-bold);
-    font-size: clamp(2rem, 4vw + 1rem, 4rem);
-    line-height: clamp(2.5rem, 4.5vw + 1rem, 4.5rem);
-    color: var(--color-white);
-    text-align: left;
-    word-break: break-word;
-    margin: 0;
+    composes: page-title from '../../styles/utilities/typography.modules.css';
 }

@@ -1,52 +1,45 @@
 .slider {
     width: 100%;
-    max-width: fit-content;
     text-align: center;
     overflow-x: auto;
-    margin: 0 auto;
     overflow-y: hidden;
+    margin: 0 auto;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     position: relative;
 }
 
 .slides {
+    clip-path: inset(0 round 8px);
     display: flex;
-    padding-bottom: 1rem;
     overflow-x: auto;
     overflow-y: hidden;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
 
-.slides::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-    background: var(--color-clay);
-    border-radius: 4px;
-}
-
-.slides::-webkit-scrollbar-track {
-    background: transparent;
-}
-
 .slide {
-    scroll-snap-align: start;
+    align-items: center;
+    aspect-ratio: 1;
+    clip-path: inset(0 round 8px);
+    cursor: pointer;
+    display: flex;
     flex-shrink: 0;
-    width: 18.75rem;
+    justify-content: center;
     height: 32.5rem;
     margin-right: 1.5rem;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    scroll-snap-align: start;
     transition: transform 0.5s ease-out;
-    clip-path: inset(0 round 4px);
-    -webkit-clip-path: inset(0 round 4px);
+    width: 18.75rem;
+}
+
+.slide:last-child {
+    scroll-snap-align: end;
+    margin-right: 0px;
 }
 
 .image {
@@ -64,8 +57,25 @@
     transition: opacity 0.2s ease-out;
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 32rem) {
     .slide {
         width: calc(100% + 2.5rem);
     }
+}
+
+.slides::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    scrollbar-gutter: stable both-edges;
+
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: var(--color-clay);
+    border-radius: 4px;
+}
+
+.slides::-webkit-scrollbar-track {
+
+    background: transparent;
 }

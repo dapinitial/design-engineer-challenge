@@ -6,5 +6,5 @@ interface TextProps {
 }
 
 export default function Text({ text }: TextProps) {
-    return <p className={styles.bodyLarge}>{text}</p>
+    return <p className={styles.text}>{text}</p>
 }

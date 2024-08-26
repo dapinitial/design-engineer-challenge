@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './wallpapercard.module.css'
 import CopyButton from '@/app/shared/components/buttons/copy/copybutton'
 import DownloadButton from '@/app/shared/components/buttons/download/downloadbutton'
+import Table from '../../table/table'
 
 interface WallpaperCardProps {
     title: string
@@ -28,18 +29,10 @@ export default function WallpaperCard({
                 <h2 className={styles.title}>{title}</h2>
                 <p className={styles.category}>{category}</p>
                 <p className={styles.description}>{description}</p>
-                <table className={styles.dataTable}>
-                    <tbody>
-                        <tr>
-                            <td>Total Assets:</td>
-                            <td>{totalAssets}</td>
-                        </tr>
-                        <tr>
-                            <td>Asset Type:</td>
-                            <td>{assetType}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <Table data={[
+                    { "Total Assets": totalAssets },
+                    { "Asset Type": assetType }
+                ]} />
                 <div className={styles.footer}>
                     <CopyButton imageUrl={imageUrl} title={title} />
                     <DownloadButton title={title} imageUrl={imageUrl} />
