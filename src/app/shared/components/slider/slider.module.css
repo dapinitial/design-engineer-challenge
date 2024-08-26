@@ -63,6 +63,12 @@
     }
 }
 
+@media only screen and (max-width: 767px) and (hover: none) and (pointer: coarse) {
+    .slide {
+        width: calc(100% + 4rem);
+    }
+}
+
 .slides::-webkit-scrollbar {
     width: 4px;
     height: 4px;

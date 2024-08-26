@@ -102,3 +102,9 @@
 .buttonText.fadeIn {
     opacity: 1;
 }
+
+@media only screen and (max-width: 767px) and (hover: none) and (pointer: coarse) {
+    .button {
+        font-size: 1rem;
+    }
+}
