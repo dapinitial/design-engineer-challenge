@@ -1,0 +1,9 @@
+.bodyLarge {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-body-large);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body-large);
+    color: var(--color-smokey);
+    text-align: left;
+    margin-bottom: 1.5rem;
+}

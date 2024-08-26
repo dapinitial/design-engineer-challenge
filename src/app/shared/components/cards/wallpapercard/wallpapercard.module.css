@@ -1,0 +1,108 @@
+.caption-large {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-caption-large);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-caption-large);
+    text-align: left;
+    color: var(--color-lavender);
+}
+
+.body-medium {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-body-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body-medium);
+    text-align: left;
+    color: var(--color-white);
+}
+
+.caption-medium {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-caption-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-caption-medium);
+    text-align: left;
+    color: var(--color-lavender);
+}
+
+.card {
+    background-color: var(--color-steel);
+    height: calc(100% - var(--spacing-xl));
+    padding: var(--spacing-xxl) var(--spacing-lg) var(--spacing-xxxl) var(--spacing-lg);
+    position: absolute;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wallpaperDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-steel);
+    color: var(--color-white);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+    clip-path: inset(0 round 0.625rem);
+    -webkit-clip-path: inset(0 round 0.625rem);
+}
+
+.active .wallpaperDetails {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.title {
+    composes: caption-large;
+    margin-bottom: var(--spacing-sm);
+}
+
+.category {
+    composes: body-medium;
+    margin: 0;
+}
+
+.description {
+    composes: caption-large;
+    margin-bottom: var(--spacing-md);
+}
+
+.dataTable {
+    composes: caption-medium;
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.dataTable td:first-child {
+    color: var(--color-lavender);
+    text-align: left;
+}
+
+.dataTable td {
+    border-bottom: 1px solid var(--color-clay);
+    color: var(--color-white);
+    padding: 0.5rem 0;
+    text-align: right;
+}
+
+.dataTable tr:last-of-type td {
+    border-bottom: 0;
+}
+
+.footer {
+    display: flex;
+    gap: var(--gap-sm);
+    align-items: center;
+    margin-top: auto;
+}

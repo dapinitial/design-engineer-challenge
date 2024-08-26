@@ -1,0 +1,29 @@
+.copyButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--color-smokey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: var(--color-steel);
+    cursor: pointer;
+}
+
+
+.copyButton:hover {
+    background-color: var(--color-smokey);
+}
+
+.copyButton:active {
+    background-color: var(--color-clay);
+}
+
+.copyButton:focus {
+    background-color: var(--color-smokey);
+    border: 1px solid var(--color-white);
+}
+
+.copyIcon {
+    fill: var(--color-white);
+}

@@ -1,0 +1,39 @@
+/* Margin utilities */
+
+.margin-sm {
+    margin: var(--spacing-sm);
+}
+
+.margin-md {
+    margin: var(--spacing-md);
+}
+
+.margin-lg {
+    margin: var(--spacing-lg);
+}
+
+/* Padding utilities */
+.padding-sm {
+    padding: var(--spacing-sm);
+}
+
+.padding-md {
+    padding: var(--spacing-md);
+}
+
+.padding-lg {
+    padding: var(--spacing-lg);
+}
+
+/* Gap utilities */
+.gap-sm {
+    gap: var(--gap-sm);
+}
+
+.gap-md {
+    gap: var(--gap-md);
+}
+
+.gap-lg {
+    gap: var(--gap-lg);
+}
