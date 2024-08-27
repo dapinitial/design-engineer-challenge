@@ -1,12 +1,6 @@
 /** @type {import('postcss-load-config').Config} */
 const config = {
-  plugins: [
-    'postcss-preset-env',
-    require('lightningcss')({
-      minify: true,
-      sourceMap: true,
-    }),
-  ],
+  plugins: [],
 }
 
-export default config
+export default config;

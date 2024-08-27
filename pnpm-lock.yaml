@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      lightningcss:
-        specifier: ^1.26.0
-        version: 1.26.0
       next:
         specifier: ^14.2.4
         version: 14.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -36,6 +33,9 @@ importers:
       eslint-config-next:
         specifier: ^14.2.4
         version: 14.2.6(eslint@8.57.0)(typescript@5.5.4)
+      lightningcss:
+        specifier: ^1.26.0
+        version: 1.26.0
       postcss:
         specifier: ^8.4.38
         version: 8.4.41
